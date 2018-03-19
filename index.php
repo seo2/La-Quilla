@@ -1,64 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>La Quilla</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="assets/fonts/font-awesome-4.6.3/css/font-awesome.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500,600,700" rel="stylesheet">
-  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="assets/owlcarousel/assets/owl.carousel.css" type="text/css" rel="stylesheet"/>
-  <link href="assets/css/style.css?ver=1" type="text/css" rel="stylesheet" media="screen,projection"/>
-  
-</head>
-
-<body>
-	<header>
-	  <div class="navbar">
-		  <nav class="" role="navigation">
-		    <div class="nav-wrapper container"><a href="index.html" target="_self" class="brand-logo"><img src="assets/img/logo_la_quilla.png" width="200"/></a>
-		      <ul class="right hide-on-med-and-down">
-			      <li><a href="noticias.html" class="page-scroll">Noticias</a></li>
-		        <li><a href="#somos" class="page-scroll">Somos</a></li>
-		        <li><a href="#creaciones" class="page-scroll">Creaciones</a></li>
-		        <li><a href="#educacion" class="page-scroll">Educación</a></li>
-		        <li><a href="#gestion_y_comunicacion" class="page-scroll">Gestión y Comunicación</a></li>
-<!--
-		      	<li><a href="#" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
--->
-		      </ul>
-		
-		      <ul id="nav-mobile" class="side-nav">
-			      <li class="brand-logo-mobile"><a href="index.html" target="_self"><img src="assets/img/logo_la_quilla.png" width="200"/></a></li>
-			      <li><a href="noticias.html" class="page-scroll">Noticias</a></li>
-		        <li><a href="#somos" target="_self" class="">Somos</a></li>
-		        <li><a href="#creaciones" target="_self" class="">Creaciones</a></li>
-		        <li><a href="#educacion" target="_self" class="">Educación</a></li>
-		        <li><a href="#gestion_y_comunicacion" target="_self" class="">Gestión y Comunicación</a></li>
-		        <li class="redes_sociales">
-<!--
-			        <a href="#" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-							<a href="#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-							<a href="#" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
-							<a href="#" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
--->
-		        </li>
-		      </ul>
-		      <a href="#" data-activates="nav-mobile" class="button-collapse right">
-			      <i class="material-icons">menu</i>
-			    </a>
-		    </div>
-			</nav>
-	  </div> <!-- /.navbar -->
-	</header>
-	
+<?php get_header(); ?>	
 	<div class="container">
 		<div class="section">
 				<div class="row hide-on-small-only"><!-- cuando el banner principal está encendido -->
@@ -70,7 +10,7 @@
 		              <h5><a href="noticia.html" target="_self">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a turpis hendrerit, feugiat risus metus.</a></h5> <!-- 100 bytes -->
 		              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a risus finibus, blandit lorem non, convallis orci. Integer consequat posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a risus finibus, blandit lorem non, convallis orci. Integer consequat posuere.</p><!-- 140 bytes -->
 		            </div><!-- /.banner_item_post -->
-							  <a href="noticia.html" target="_self"><img src="assets/img/banner_noticia1.jpg" class="responsive-img border_color"/></a><!-- 1900x800 -->
+							  <a href="noticia.html" target="_self"><img src="<?php bloginfo('template_url'); ?>/assets/img/banner_noticia1.jpg" class="responsive-img border_color"/></a><!-- 1900x800 -->
 							</div><!-- /.banner_item -->
 							
 							<div class="item banner_item">
@@ -79,7 +19,7 @@
 		              <h5><a href="noticia.html" target="_self">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a turpis hendrerit, feugiat risus metus.</a></h5> <!-- 100 bytes -->
 		              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a risus finibus, blandit lorem non, convallis orci. Integer consequat posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a risus finibus, blandit lorem non, convallis orci. Integer consequat posuere.</p><!-- 140 bytes -->
 		            </div><!-- /.banner_item_post -->
-							  <a href="noticia.html" target="_self"><img src="assets/img/banner_noticia2.jpg" class="responsive-img"/></a><!-- 1900x800 -->
+							  <a href="noticia.html" target="_self"><img src="<?php bloginfo('template_url'); ?>/assets/img/banner_noticia2.jpg" class="responsive-img"/></a><!-- 1900x800 -->
 							</div><!-- /.banner_item -->
 							
 						</div><!-- /.owl -->
@@ -90,7 +30,7 @@
 				<div class="row hide-on-med-and-up"><!-- cuando el banner principal está apagado -->
 					<div class="col l4 m4 s12">
 						<div class="post_noticia_bk box_shadow">
-							<a href="noticia.html" target="_self"><img src="assets/img/banner_noticia1.jpg" class="responsive-img border_color"/></a><!-- 600x400 -->
+							<a href="noticia.html" target="_self"><img src="<?php bloginfo('template_url'); ?>/assets/img/banner_noticia1.jpg" class="responsive-img border_color"/></a><!-- 600x400 -->
 							<div class="section">
 								<h6>Enero 31, 2018</h6>
 								<h5><a href="noticia.html" target="_self">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a turpis hendrerit, feugiat risus metus.</a></h5><!-- limitar a 80 caracteres -->
@@ -101,7 +41,7 @@
 					
 					<div class="col l4 m4 s12">
 						<div class="post_noticia_bk box_shadow">
-							<a href="" target="_self"><img src="assets/img/banner_noticia2.jpg" class="responsive-img"/></a><!-- 600x400 -->
+							<a href="" target="_self"><img src="<?php bloginfo('template_url'); ?>/assets/img/banner_noticia2.jpg" class="responsive-img"/></a><!-- 600x400 -->
 							<div class="section">
 								<h6>Enero 31, 2018</h6>
 								<h5><a href="" target="_self">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a turpis hendrerit, feugiat risus metus.</a></h5><!-- limitar a 80 caracteres -->
@@ -116,7 +56,7 @@
 				<div class="row">
 					<div class="col l4 m4 s12">
 						<div class="post_noticia box_shadow">
-							<a href="noticia.html" target="_self"><img src="assets/img/noticia1.jpg" class="responsive-img"/></a><!-- 600x400 -->
+							<a href="noticia.html" target="_self"><img src="<?php bloginfo('template_url'); ?>/assets/img/noticia1.jpg" class="responsive-img"/></a><!-- 600x400 -->
 							<div class="section">
 								<h6>Enero 31, 2018</h6>
 								<h5><a href="noticia.html" target="_self">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a turpis hendrerit, feugiat risus metus.</a></h5> <!-- 100 bytes -->
@@ -127,7 +67,7 @@
 					
 					<div class="col l4 m4 s12">
 						<div class="post_noticia box_shadow">
-							<img src="assets/img/noticia2.jpg" class="responsive-img"/><!-- 600x400 -->
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/noticia2.jpg" class="responsive-img"/><!-- 600x400 -->
 							<div class="section">
 								<h6>Enero 31, 2018</h6>
 								<h5><a href="" target="_self">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a turpis hendrerit, feugiat risus metus.</a></h5><!-- limitar a 80 caracteres -->
@@ -138,7 +78,7 @@
 					
 					<div class="col l4 m4 s12">
 						<div class="post_noticia box_shadow">
-							<img src="assets/img/noticia3.jpg" class="responsive-img"/><!-- 600x400 -->
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/noticia3.jpg" class="responsive-img"/><!-- 600x400 -->
 							<div class="section">
 								<h6>Enero 31, 2018</h6>
 								<h5><a href="" target="_self">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a turpis hendrerit, feugiat risus metus.</a></h5><!-- limitar a 80 caracteres -->
@@ -167,10 +107,10 @@
 		<div class="container">	
 			<div class="row">
 				<div class="col m4 hide-on-small-only">
-					<img src="assets/img/planta1.png" width="260"/>
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/planta1.png" width="260"/>
 				</div><!-- /.col -->
 				<div class="col m8">
-					<img src="assets/img/somos.png" width="220"/>
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/somos.png" width="220"/>
 					<p>La Quilla es una empresa que  nace durante el año 2016,  liderada por Noela Salas y Angie Giaverini. Su trabajo esta orientando a  la industria creativa, donde desarrollan  tres ejes de trabajo:  creación artística, educación y comunicación y gestión.  Con una vasta trayectoria relaciona a las artes escénicas, la música y la gestión cultura, la Quilla nace como resultado de una sincronía profesional que buscar ser significativa  para otros y  causante de transformaciones. </p>
 				</div><!-- /.col -->
 			</div><!-- /.row -->
@@ -195,7 +135,7 @@
         <h1 class="titulos_blancos"></h1>
       </div>
     </div>
-    <div class="parallax"><img src="assets/img/background_la_quilla.jpg" alt="La Quilla"></div>
+    <div class="parallax"><img src="<?php bloginfo('template_url'); ?>/assets/img/background_la_quilla.jpg" alt="La Quilla"></div>
   </div><!-- /parallax-container -->
   
   
@@ -217,13 +157,13 @@
 	  <div class="container">
 		  <div class="row">
 			  <div class="col m3 hide-on-small-only">
-				  <img src="assets/img/hojas_creaciones_left.png" width="280" class="responsive-img"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/hojas_creaciones_left.png" width="280" class="responsive-img"/>
 			  </div>
 			  <div class="col m6 center">
-				  <img src="assets/img/creaciones.png" width="380" class="responsive-img"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/creaciones.png" width="380" class="responsive-img"/>
 			  </div>
 			  <div class="col m3 hide-on-small-only">
-				  <img src="assets/img/hojas_creaciones_right.png" width="280" class="responsive-img"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/hojas_creaciones_right.png" width="280" class="responsive-img"/>
 			  </div>
 		  </div><!-- /.row -->
 	  </div><!-- /.container -->
@@ -232,33 +172,33 @@
   		  <div class="col m8 s12">
 	  		  <div id="owl-demo" class="owl-carousel owl-theme box_shadow">
 						  <div class="item banner_item">
-							  <img src="assets/img/microtransmisora1.jpg" class="responsive-img"/><!-- 1200x800 -->
+							  <img src="<?php bloginfo('template_url'); ?>/assets/img/microtransmisora1.jpg" class="responsive-img"/><!-- 1200x800 -->
 							</div><!-- /.banner_item -->
 							
 							<div class="item banner_item">
-							  <img src="assets/img/microtransmisora2.jpg" class="responsive-img"/><!-- 1200x800 -->
+							  <img src="<?php bloginfo('template_url'); ?>/assets/img/microtransmisora2.jpg" class="responsive-img"/><!-- 1200x800 -->
 							</div><!-- /.banner_item -->
 							
 							<div class="item banner_item">
-							  <img src="assets/img/microtransmisora3.jpg" class="responsive-img"/><!-- 1200x800 -->
+							  <img src="<?php bloginfo('template_url'); ?>/assets/img/microtransmisora3.jpg" class="responsive-img"/><!-- 1200x800 -->
 							</div><!-- /.banner_item -->
 							
 						</div><!-- /.owl --></div><!-- /.col -->
   		  <div class="col m4 center textos">
-	  		  <img src="assets/img/microtransmisora_logo.jpg" width="160" class="responsive-img"/>
+	  		  <img src="<?php bloginfo('template_url'); ?>/assets/img/microtransmisora_logo.jpg" width="160" class="responsive-img"/>
 	  		  <p>La microtrasnmisora es un escenario móvil que recorre la ciudad, con música, teatro y artes. Es un proyecto que vincula a dos compañías de teatro La Gran Reyneta y La Quilla, este proyecto asociativo busca explorar y sostener en el tiempo maneras colaborativas de trabajo, con nuevas ideas. La Microtransmisora es una transmisión multisensorial que invita al expectador a vivir una experiencia pública y callejera.</p>
   		  </div><!-- /.col -->
   	  </div><!-- /.row -->
   	  
   	  <div class="row">
 	  	  <div class="col m4">
-		  	  <img class="materialboxed responsive-img" data-caption="La Microtransmisora en Plaza de la Ciudadania" src="assets/img/microtransmisora4.jpg"><!-- 1200x800 -->
+		  	  <img class="materialboxed responsive-img" data-caption="La Microtransmisora en Plaza de la Ciudadania" src="<?php bloginfo('template_url'); ?>/assets/img/microtransmisora4.jpg"><!-- 1200x800 -->
 		  	</div>
 		  	  <div class="col m4">
-		  	  <img class="materialboxed responsive-img" data-caption="La Microtransmisora en Plaza de la Ciudadania" src="assets/img/microtransmisora5.jpg"><!-- 1200x800 -->
+		  	  <img class="materialboxed responsive-img" data-caption="La Microtransmisora en Plaza de la Ciudadania" src="<?php bloginfo('template_url'); ?>/assets/img/microtransmisora5.jpg"><!-- 1200x800 -->
 		  	</div>
 		  	  <div class="col m4">
-		  	  <img class="materialboxed responsive-img" data-caption="La Microtransmisora en Plaza de la Ciudadania" src="assets/img/microtransmisora6.jpg"><!-- 1200x800 -->
+		  	  <img class="materialboxed responsive-img" data-caption="La Microtransmisora en Plaza de la Ciudadania" src="<?php bloginfo('template_url'); ?>/assets/img/microtransmisora6.jpg"><!-- 1200x800 -->
 		  	</div>
   	  </div><!-- /.row -->
     </div><!-- /.container -->
@@ -295,13 +235,13 @@ Angie Giaverini/Noela Salas </p>
 		  		  <div class="col m12 s12">
 		  		 		<div id="owl-demo" class="owl-carousel owl-theme box_shadow" style="margin-bottom: 20px;">
 							  <div class="item banner_item">
-								  <img src="assets/img/laboratorio_escenico1.jpg" class="responsive-img"/><!-- 1200x800 -->
+								  <img src="<?php bloginfo('template_url'); ?>/assets/img/laboratorio_escenico1.jpg" class="responsive-img"/><!-- 1200x800 -->
 								</div><!-- /.banner_item -->
 								<div class="item banner_item">
-								  <img src="assets/img/laboratorio_escenico2.jpg" class="responsive-img"/><!-- 1200x800 -->
+								  <img src="<?php bloginfo('template_url'); ?>/assets/img/laboratorio_escenico2.jpg" class="responsive-img"/><!-- 1200x800 -->
 								</div><!-- /.banner_item -->
 								<div class="item banner_item">
-								  <img src="assets/img/laboratorio_escenico3.jpg" class="responsive-img"/><!-- 1200x800 -->
+								  <img src="<?php bloginfo('template_url'); ?>/assets/img/laboratorio_escenico3.jpg" class="responsive-img"/><!-- 1200x800 -->
 								</div><!-- /.banner_item -->
 		  		 		</div><!-- /.owl -->
 						</div><!-- /.col -->
@@ -324,7 +264,7 @@ Angie Giaverini/Noela Salas </p>
         <h1 class="titulos_blancos"></h1>
       </div>
     </div>
-    <div class="parallax"><img src="assets/img/background_taller_de_sombras.jpg" alt="La Quilla"></div>
+    <div class="parallax"><img src="<?php bloginfo('template_url'); ?>/assets/img/background_taller_de_sombras.jpg" alt="La Quilla"></div>
   </div><!-- /parallax-container -->   
   
   
@@ -338,13 +278,13 @@ Angie Giaverini/Noela Salas </p>
 	  <div class="container">
 		  <div class="row">
 			  <div class="col m3 hide-on-small-only">
-				  <img src="assets/img/hojas_educacion_left.png" width="280" class="responsive-img"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/hojas_educacion_left.png" width="280" class="responsive-img"/>
 			  </div>
 			  <div class="col m6 center">
-				  <img src="assets/img/educacion.png" width="380" class="responsive-img"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/educacion.png" width="380" class="responsive-img"/>
 			  </div>
 			  <div class="col m3 hide-on-small-only">
-				  <img src="assets/img/hojas_educacion_right.png" width="280" class="responsive-img"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/hojas_educacion_right.png" width="280" class="responsive-img"/>
 			  </div>
 		  </div><!-- /.row -->
 	  </div><!-- /.container -->
@@ -357,16 +297,16 @@ Angie Giaverini/Noela Salas </p>
 					</div><!-- /.textos -->
 	  		  
 	  		  <div class="col m6">
-			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Sombras" src="assets/img/taller_de_sombras1.jpg"><!-- 1200x800 -->
+			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Sombras" src="<?php bloginfo('template_url'); ?>/assets/img/taller_de_sombras1.jpg"><!-- 1200x800 -->
 			  	</div>
 					<div class="col m6">
-			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Sombras" src="assets/img/taller_de_sombras2.jpg"><!-- 1200x800 -->
+			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Sombras" src="<?php bloginfo('template_url'); ?>/assets/img/taller_de_sombras2.jpg"><!-- 1200x800 -->
 			  	</div>
 					<div class="col m6">
-			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Sombras" src="assets/img/taller_de_sombras3.jpg"><!-- 1200x800 -->
+			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Sombras" src="<?php bloginfo('template_url'); ?>/assets/img/taller_de_sombras3.jpg"><!-- 1200x800 -->
 			  	</div>
 			  	<div class="col m6">
-			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Sombras" src="assets/img/taller_de_sombras4.jpg"><!-- 1200x800 -->
+			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Sombras" src="<?php bloginfo('template_url'); ?>/assets/img/taller_de_sombras4.jpg"><!-- 1200x800 -->
 			  	</div>
 	  		  
   		  </div><!-- /.col -->
@@ -377,13 +317,13 @@ Angie Giaverini/Noela Salas </p>
 						<p>La microtrasnmisora es un escenario móvil que recorre la ciudad, con música, teatro y artes. Es un proyecto que vincula a dos compañías de teatro La Gran Reyneta y La Quilla, este proyecto asociativo busca explorar y sostener en el tiempo maneras colaborativas de trabajo, con nuevas ideas. La Microtransmisora es una transmisión multisensorial que invita al expectador a vivir una experiencia pública y callejera.</p>
 					</div><!-- /.textos -->
 	  		  <div class="col m6">
-			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Jardín" src="assets/img/taller_de_jardin1.jpg"><!-- 1200x800 -->
+			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Jardín" src="<?php bloginfo('template_url'); ?>/assets/img/taller_de_jardin1.jpg"><!-- 1200x800 -->
 			  	</div>
 					<div class="col m6">
-			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Jardín" src="assets/img/taller_de_jardin2.jpg"><!-- 1200x800 -->
+			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Jardín" src="<?php bloginfo('template_url'); ?>/assets/img/taller_de_jardin2.jpg"><!-- 1200x800 -->
 			  	</div>
 					<div class="col m6">
-			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Jardín" src="assets/img/taller_de_jardin3.jpg"><!-- 1200x800 -->
+			  	  <img class="materialboxed responsive-img margin_bottom_20" data-caption="Taller de Jardín" src="<?php bloginfo('template_url'); ?>/assets/img/taller_de_jardin3.jpg"><!-- 1200x800 -->
 			  	</div>
 	  		  
   		  </div><!-- /.col -->
@@ -402,13 +342,13 @@ Angie Giaverini/Noela Salas </p>
 	  <div class="container">
 		  <div class="row">
 			  <div class="col m12 center">
-				  <img src="assets/img/gestion_y_comunicacion.png" width="800" class="responsive-img"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/gestion_y_comunicacion.png" width="800" class="responsive-img"/>
 			  </div>
 		  </div><!-- /.row -->
 		  
 		  <div class="row">
 			  <div class="col m4 center">
-				  <img src="assets/img/logo_la_makinita.png" class="responsive-img" width="220"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_la_makinita.png" class="responsive-img" width="220"/>
 				  <div class="textos">
 	  		  	<h6>La Makinita</h6>
 						<p>La microtrasnmisora es un escenario móvil que recorre la ciudad, con música, teatro y artes. Es un proyecto que vincula a dos compañías de teatro La Gran Reyneta y La Quilla, este proyecto asociativo busca explorar y sostener en el tiempo maneras colaborativas de trabajo, con nuevas ideas. La Microtransmisora es una transmisión multisensorial que invita al expectador a vivir una experiencia pública y callejera.</p>
@@ -416,7 +356,7 @@ Angie Giaverini/Noela Salas </p>
 					</div><!-- /.textos -->
 			  </div><!-- /.col -->
 			  <div class="col m4 center">
-				  <img src="assets/img/logo_teatro_ictus.png" class="responsive-img" width="220"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_teatro_ictus.png" class="responsive-img" width="220"/>
 				  <div class="textos">
 	  		  	<h6>Teatro Ictus</h6>
 						<p>La microtrasnmisora es un escenario móvil que recorre la ciudad, con música, teatro y artes. Es un proyecto que vincula a dos compañías de teatro La Gran Reyneta y La Quilla, este proyecto asociativo busca explorar y sostener en el tiempo maneras colaborativas de trabajo, con nuevas ideas. La Microtransmisora es una transmisión multisensorial que invita al expectador a vivir una experiencia pública y callejera.</p>
@@ -424,7 +364,7 @@ Angie Giaverini/Noela Salas </p>
 					</div><!-- /.textos -->
 			  </div><!-- /.col -->
 			  <div class="col m4 center">
-				  <img src="assets/img/logo_imesur.png" class="responsive-img" width="220"/>
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_imesur.png" class="responsive-img" width="220"/>
 				  <div class="textos">
 	  		  	<h6>Encuentro Imesur</h6>
 						<p>La microtrasnmisora es un escenario móvil que recorre la ciudad, con música, teatro y artes. Es un proyecto que vincula a dos compañías de teatro La Gran Reyneta y La Quilla, este proyecto asociativo busca explorar y sostener en el tiempo maneras colaborativas de trabajo, con nuevas ideas. La Microtransmisora es una transmisión multisensorial que invita al expectador a vivir una experiencia pública y callejera.</p>
@@ -481,11 +421,11 @@ Angie Giaverini/Noela Salas </p>
 	</footer>
 
   <!--  SCRIPTS -->
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/materialize.js"></script>
-  <script src="assets/js/init.js"></script>
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/owlcarousel/owl.carousel.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/materialize.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/init.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.easing.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/owlcarousel/owl.carousel.js"></script>
   
 	<script>
 	  $(document).ready(function() {

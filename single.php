@@ -7,12 +7,12 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="assets/fonts/font-awesome-4.6.3/css/font-awesome.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="<?php bloginfo('template_url'); ?>/assets/fonts/font-awesome-4.6.3/css/font-awesome.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500,600,700" rel="stylesheet">
-  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="assets/owlcarousel/assets/owl.carousel.css" type="text/css" rel="stylesheet"/>
-  <link href="assets/css/style.css?ver=1" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="<?php bloginfo('template_url'); ?>/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="<?php bloginfo('template_url'); ?>/assets/owlcarousel/assets/owl.carousel.css" type="text/css" rel="stylesheet"/>
+  <link href="<?php bloginfo('template_url'); ?>/assets/css/style.css?ver=1" type="text/css" rel="stylesheet" media="screen,projection"/>
   
 </head>
 
@@ -20,7 +20,7 @@
 	<header>
 	  <div class="navbar">
 		  <nav class="" role="navigation">
-		    <div class="nav-wrapper container"><a href="index.html" target="_self" class="brand-logo"><img src="assets/img/logo_la_quilla.png" width="200"/></a>
+		    <div class="nav-wrapper container"><a href="index.html" target="_self" class="brand-logo"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo_la_quilla.png" width="200"/></a>
 		      <ul class="right hide-on-med-and-down">
 			      <li><a href="noticias.html" class="selected">Noticias</a></li>
 		        <li><a href="#somos" class="page-scroll">Somos</a></li>
@@ -36,7 +36,7 @@
 		      </ul>
 		
 		      <ul id="nav-mobile" class="side-nav">
-			      <li class="brand-logo-mobile"><a href="index.html" target="_self"><img src="assets/img/logo_la_quilla.png" width="200"/></a></li>
+			      <li class="brand-logo-mobile"><a href="index.html" target="_self"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo_la_quilla.png" width="200"/></a></li>
 			      <li><a href="noticias.html" class="page-scroll">Noticias</a></li>
 		        <li><a href="#somos" target="_self" class="">Somos</a></li>
 		        <li><a href="#creaciones" target="_self" class="">Creaciones</a></li>
@@ -78,11 +78,11 @@
 					<div class="col m12 s12">
 						<div id="owl-demo" class="owl-carousel">
 							<div class="item banner_item">
-							  <img src="assets/img/banner_noticia1.jpg" class="responsive-img"/><!-- proporción 1600x600 -->
+							  <img src="<?php bloginfo('template_url'); ?>/assets/img/banner_noticia1.jpg" class="responsive-img"/><!-- proporción 1600x600 -->
 							</div><!-- /.banner_item -->
 		
 		          <div class="item banner_item">
-							  <img src="assets/img/banner_noticia2.jpg" class="responsive-img"/><!-- proporción 1600x600 -->
+							  <img src="<?php bloginfo('template_url'); ?>/assets/img/banner_noticia2.jpg" class="responsive-img"/><!-- proporción 1600x600 -->
 							</div><!-- /.banner_item -->
 		        </div><!-- /owl-demo -->
 					</div><!-- /.col -->
@@ -150,7 +150,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet commodo pur
         <h1 class="titulos_blancos"></h1>
       </div>
     </div>
-    <div class="parallax"><img src="assets/img/background_microtransmisora.jpg" alt="La Quilla"></div>
+    <div class="parallax"><img src="<?php bloginfo('template_url'); ?>/assets/img/background_microtransmisora.jpg" alt="La Quilla"></div>
   </div><!-- /parallax-container -->   
   
   
@@ -207,11 +207,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet commodo pur
 	</footer>
 
   <!--  SCRIPTS -->
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/materialize.js"></script>
-  <script src="assets/js/init.js"></script>
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/owlcarousel/owl.carousel.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/materialize.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/init.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.easing.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/assets/owlcarousel/owl.carousel.js"></script>
   
 	<script>
 	  $(document).ready(function() {
