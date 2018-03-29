@@ -294,7 +294,7 @@
 <?php if ( $the_query->have_posts() ) : ?>
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>			  
 			  <div class="col m4 center">
-				  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_la_makinita.png" class="responsive-img" width="220"/>
+				  <?php the_post_thumbnail('logo-gestion', array('class' => 'responsive-img')); ?>
 				  <div class="textos">
 					  <h6><?php the_title(); ?></h6>
 					  <?php the_content(); ?>

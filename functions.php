@@ -8,6 +8,7 @@ function iniciarTema(){
 	add_image_size('creaciones', 1200, 800, true);
 	add_image_size('slider-noticia', 964, 406, true);
 	add_image_size('logo-creaciones', 160, 223, true);
+	add_image_size('logo-gestion', 220, 160, true);
 		
 
     // Activar Titulo 
